@@ -5,42 +5,45 @@ public class sda2021 {
 
 
 public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
 
-    int n,a,b,suma,dif,min=0,max=0,dist;
+    int n,suma,dif,min=0,max=0,dist;
     float media;
-    System.out.println("Introduceti cele 2 numere: ");
+    System.out.println("Introduceti primul numar ");
+    int a1 = scanner.nextInt();
+    System.out.println("Introduceti al doilea numar ");
     Scanner sc=new Scanner(System.in);
-    a=sc.nextInt();
-    b=sc.nextInt();
+    int b1 = scanner.nextInt();
 
-    suma=a+b;
-    System.out.println("Suma dintre cele 2 numere este: "+suma);
 
-    dif=a-b;
-    System.out.println("Diferenta dintre cele 2 numere este: " +dif);
+    suma=a1+b1;
+    System.out.println("Suma : "+suma);
 
-    media=(float)(a+b)/2;
-    System.out.println("Media celor 2 numere este: "+media);
+    dif=a1-b1;
+    System.out.println("Diferenta : " +dif);
+
+    media=(float)(a1+b1)/2;
+    System.out.println("Media : "+media);
 
      {
-         if(a>b) {
-             max=a;
-             min=b;
-             dist=a-b;
+         if(a1>b1) {
+             max=a1;
+             min=b1;
+             dist=a1-b1;
              }
 
              else {
-                 max=b;
-                 min=a;
-                 dist=b-a;
+                 max=b1;
+                 min=a1;
+                 dist=b1-a1;
          }
 
 
          }
 
-     System.out.println("Maximul dintre cele 2 numere este: "+max);
-     System.out.println("Minimul dintre cele 2 numere este: "+min);
-     System.out.println("Distanta dintre cele 2 numere este: "+dist);
+     System.out.println("Maximul: "+max);
+     System.out.println("Minimul: "+min);
+     System.out.println("Distanta : "+dist);
      }
 
 
