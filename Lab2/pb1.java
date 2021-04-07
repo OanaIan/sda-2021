@@ -7,12 +7,12 @@ public class pb1 {
 
 		System.out.println("Tipul de drum:");
 		String var = x.next();
-		System.out.println("Viteza maxima admisa pentru varianta1 - " + prima_var(var));
+		System.out.println("Viteza maxima admisa pentru varianta1 - " + primaVar(var));
 		System.out.println("Viteza maxima admisa pentru varianta2 - " + aDouaVar(var));
 		System.out.println("Viteza maxima admisa pentru varianta3 - " + aTreiaVar(var));
 	}
 
-	public static int prima_var(String opt) {
+	public static int primaVar(String opt) {
 		if (opt.equalsIgnoreCase("oras")) {
 			return 50;
 		} else {
