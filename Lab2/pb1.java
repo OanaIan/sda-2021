@@ -8,7 +8,7 @@ public class pb1 {
 		System.out.println("Tipul de drum:");
 		String var = x.next();
 		System.out.println("Viteza maxima admisa pentru varianta1 - " + prima_var(var));
-		System.out.println("Viteza maxima admisa pentru varianta2 - " + a_doua_var(var));
+		System.out.println("Viteza maxima admisa pentru varianta2 - " + aDouaVar(var));
 		System.out.println("Viteza maxima admisa pentru varianta3 - " + aTreiaVar(var));
 	}
 
@@ -32,7 +32,7 @@ public class pb1 {
 		}
 	}
 
-	public static int a_doua_var(String opt) {
+	public static int aDouaVar(String opt) {
 
 		switch (opt) {
 		case "oras":
